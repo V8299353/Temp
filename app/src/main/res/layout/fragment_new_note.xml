@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/quantum_yellow200"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".newnote.NewNoteFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+
+
+        <EditText
+            android:id="@+id/noteTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Title" />
+
+        <EditText
+            android:id="@+id/noteDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Enter Description" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/newNoteImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_baseline_add_a_photo_24" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/ic_baseline_location_on_24" />
+
+            <TextView
+                android:id="@+id/mapCta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg"
+                android:text="Add Map Location"
+                android:textAlignment="center"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/saveNoteCta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:icon="@drawable/ic_baseline_save_24"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_bg"
+            android:text="Save Note" />
+
+        <Button
+            android:id="@+id/deleteNoteCta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:icon="@drawable/ic_baseline_delete_24"
+            android:background="@drawable/button_bg"
+            android:text="Delete Note" />
+
+
+    </LinearLayout>
+</ScrollView>

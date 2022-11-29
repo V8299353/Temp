@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/quantum_yellow200"
+    android:orientation="vertical"
+    tools:context=".profile.ProfileActivity">
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="150dp"
+        android:layout_gravity="center"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/profile_image_foreground" />
+
+    <EditText
+        android:id="@+id/profileNameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="8dp"
+        android:hint="User Name"
+        android:maxLength="100"
+        android:maxLines="1" />
+
+    <Button
+        android:id="@+id/profileSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/ic_baseline_save_24"
+        android:layout_marginHorizontal="32dp"
+        android:background="@drawable/button_bg"
+        android:layout_marginTop="8dp"
+        android:text="Save Profile" />
+
+    <Button
+        android:id="@+id/profileLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+        android:layout_marginHorizontal="32dp"
+        app:icon="@drawable/ic_baseline_power_settings_new_24"
+        android:layout_marginTop="8dp"
+        android:text="Logout" />
+
+</LinearLayout>
+
+
